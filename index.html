@@ -202,55 +202,63 @@
                     
                     <label class="calc-option">
                         <input type="checkbox" id="calc-base" checked disabled>
-                        <span>Desenvolvimento Base (Etapas 1-7)<br><span class="text-muted" style="font-size: 0.7rem;">Módulos 1 a 6 descritos no escopo básico</span></span>
+                        <span>Desenvolvimento do Sistema (Base)<br><span class="text-muted" style="font-size: 0.7rem;">Módulos completos e entregas acordadas.</span></span>
                     </label>
                     
                     <label class="calc-option">
-                        <input type="checkbox" id="calc-hosting" checked>
-                        <span>Servidor Cloud & SSL Anual<br><span class="text-muted" style="font-size: 0.7rem;">Hospedagem segura com backup diário</span></span>
+                        <input type="checkbox" id="calc-support" checked disabled>
+                        <span>Suporte para Funcionamento (Incluso)<br><span class="text-muted" style="font-size: 0.7rem;">Atendimento para dúvidas e correções operacionais.</span></span>
                     </label>
 
                     <label class="calc-option">
-                        <input type="checkbox" id="calc-support">
-                        <span>Suporte & Manutenção Mensal<br><span class="text-muted" style="font-size: 0.7rem;">Atendimento dedicado para dúvidas e bugs</span></span>
+                        <input type="checkbox" id="calc-training-video" checked disabled>
+                        <span>Vídeos Gravados de Treinamento (Incluso)<br><span class="text-muted" style="font-size: 0.7rem;">Guias operacionais em vídeo de todas as telas.</span></span>
                     </label>
 
                     <label class="calc-option">
-                        <input type="checkbox" id="calc-training">
-                        <span>Treinamento de Equipe + Guias<br><span class="text-muted" style="font-size: 0.7rem;">Workshop prático e manuais operacionais</span></span>
+                        <input type="checkbox" id="calc-vps" checked>
+                        <span>Servidor VPS (Mensalidade média)<br><span class="text-muted" style="font-size: 0.7rem;">Livre contratação (Recomendação: Hostinger).</span></span>
                     </label>
-                    
-                    <select class="calc-select" id="calc-months">
-                        <option value="6">Manutenção - Contrato de 6 meses</option>
-                        <option value="12" selected>Manutenção - Contrato de 12 meses (Recomendado)</option>
-                        <option value="24">Manutenção - Contrato de 24 meses (15% desc)</option>
-                    </select>
+
+                    <label class="calc-option">
+                        <input type="checkbox" id="calc-training-online">
+                        <span>Treinamento Online ao Vivo (+ R$ 150)<br><span class="text-muted" style="font-size: 0.7rem;">Sessão interativa online de capacitação da equipe.</span></span>
+                    </label>
+
+                    <label class="calc-option">
+                        <input type="checkbox" id="calc-training-presencial">
+                        <span>Treinamento Presencial (+ R$ 350)<br><span class="text-muted" style="font-size: 0.7rem;">Sessão física de capacitação comunitária (+ deslocamento).</span></span>
+                    </label>
                 </div>
 
                 <div class="calc-result">
                     <div>
                         <span class="badge" style="background-color: var(--muted); border-color: var(--border);">Simulação</span>
                         <div class="price-display">
-                            <span class="price-label">Total Estimado</span>
-                            <div class="price-num" id="total-display">R$ 52.400</div>
+                            <span class="price-label">Total Inicial Previsto</span>
+                            <div class="price-num" id="total-display">R$ 4.400</div>
                         </div>
                         
                         <div class="calc-rows">
                             <div class="calc-row">
                                 <span>Desenvolvimento:</span>
-                                <span id="detail-base">R$ 50.000</span>
+                                <span id="detail-base">R$ 4.250</span>
                             </div>
                             <div class="calc-row">
-                                <span>Servidor (Anual):</span>
-                                <span id="detail-hosting">R$ 2.400</span>
+                                <span>VPS (Hostinger):</span>
+                                <span id="detail-vps">R$ 150 / mês</span>
                             </div>
                             <div class="calc-row">
-                                <span>Suporte:</span>
-                                <span id="detail-support">Não Incluso</span>
+                                <span>Suporte & Vídeos:</span>
+                                <span style="color: var(--muted-foreground)">Incluso</span>
                             </div>
                             <div class="calc-row">
-                                <span>Treinamento:</span>
-                                <span id="detail-training">Não Incluso</span>
+                                <span>Treinamento Extra:</span>
+                                <span id="detail-training">Nenhum</span>
+                            </div>
+                            <div class="calc-row" style="border-top: 1px dashed var(--border); padding-top: 0.5rem; margin-top: 0.5rem; display: flex; flex-direction: column; align-items: flex-start; gap: 0.25rem;">
+                                <span class="text-muted" style="font-size: 0.7rem; font-weight: 500; text-transform: uppercase;">Forma de Pagamento:</span>
+                                <span style="font-size: 0.8rem; font-weight: 600;">50% Sinal / 50% na Entrega</span>
                             </div>
                         </div>
                     </div>
@@ -258,7 +266,7 @@
                     <div>
                         <button class="btn btn-primary" style="width: 100%; margin-bottom: 0.5rem;" id="submit-proposal-btn">Solicitar Proposta Formal</button>
                         <div class="calc-footer">
-                            * Valores meramente estimativos. Proposta oficial jurídica pós alinhamento.
+                            * VPS de livre contratação. Treinamento presencial acresce taxas de deslocamento.
                         </div>
                     </div>
                 </div>
@@ -270,8 +278,8 @@
             <h2><span>06.</span> Condições Gerais</h2>
             <div class="cond-list">
                 <div class="cond-item">
-                    <h4>Validade Comercial</h4>
-                    <p>Validade desta proposta por até 30 dias após emissão (Maio de 2025).</p>
+                    <h4>Forma de Pagamento</h4>
+                    <p>Faturamento estruturado com 50% de sinal antes e 50% após a entrega final.</p>
                 </div>
                 <div class="cond-item">
                     <h4>Garantia Total</h4>
@@ -312,14 +320,12 @@
     <script>
 
         // Interactive Price Simulator Logic
-        const calcHosting = document.getElementById('calc-hosting');
-        const calcSupport = document.getElementById('calc-support');
-        const calcTraining = document.getElementById('calc-training');
-        const calcMonths = document.getElementById('calc-months');
+        const calcVps = document.getElementById('calc-vps');
+        const calcTrainingOnline = document.getElementById('calc-training-online');
+        const calcTrainingPresencial = document.getElementById('calc-training-presencial');
 
         const totalDisplay = document.getElementById('total-display');
-        const detailHosting = document.getElementById('detail-hosting');
-        const detailSupport = document.getElementById('detail-support');
+        const detailVps = document.getElementById('detail-vps');
         const detailTraining = document.getElementById('detail-training');
 
         function formatBRL(value) {
@@ -327,59 +333,58 @@
         }
 
         function calculate() {
-            const base = 50000;
-            let hosting = 0;
-            let support = 0;
-            let training = 0;
+            const base = 4250;
+            let vps = 0;
+            let trainingExtra = 0;
+            let trainingLabel = [];
 
-            if (calcHosting.checked) {
-                hosting = 2400;
-                detailHosting.textContent = formatBRL(hosting);
+            if (calcVps.checked) {
+                vps = 150;
+                detailVps.textContent = formatBRL(vps) + " / mês";
             } else {
-                detailHosting.textContent = "Não Incluso";
+                vps = 0;
+                detailVps.textContent = "Não Incluso";
             }
 
-            if (calcSupport.checked) {
-                const months = parseInt(calcMonths.value);
-                let rate = 1800;
-                if (months === 24) rate = 1800 * 0.85; // 15% discount
-                
-                support = rate * months;
-                detailSupport.textContent = `${formatBRL(support)} (${months}m)`;
-            } else {
-                detailSupport.textContent = "Não Incluso";
+            if (calcTrainingOnline.checked) {
+                trainingExtra += 150;
+                trainingLabel.push("Online");
+            }
+            if (calcTrainingPresencial.checked) {
+                trainingExtra += 350;
+                trainingLabel.push("Presencial");
             }
 
-            if (calcTraining.checked) {
-                training = 2000;
-                detailTraining.textContent = formatBRL(training);
+            if (trainingExtra > 0) {
+                detailTraining.textContent = formatBRL(trainingExtra) + " (" + trainingLabel.join(" + ") + ")";
             } else {
-                detailTraining.textContent = "Não Incluso";
+                detailTraining.textContent = "Nenhum";
             }
 
-            const total = base + hosting + support + training;
+            const total = base + vps + trainingExtra;
             totalDisplay.textContent = formatBRL(total);
         }
 
-        calcHosting.addEventListener('change', calculate);
-        calcSupport.addEventListener('change', calculate);
-        calcTraining.addEventListener('change', calculate);
-        calcMonths.addEventListener('change', calculate);
+        calcVps.addEventListener('change', calculate);
+        calcTrainingOnline.addEventListener('change', calculate);
+        calcTrainingPresencial.addEventListener('change', calculate);
 
         // Actions
         const submitBtn = document.getElementById('submit-proposal-btn');
         const acceptBtn = document.getElementById('footer-accept-btn');
 
         function sendWhatsapp() {
-            const supportText = calcSupport.checked ? `Sim (${calcMonths.value} meses)` : "Não";
-            const hostingText = calcHosting.checked ? "Sim" : "Não";
-            const trainingText = calcTraining.checked ? "Sim" : "Não";
+            const vpsText = calcVps.checked ? "Sim (R$ 150/mês)" : "Não";
+            const onlineText = calcTrainingOnline.checked ? "Sim (R$ 150)" : "Não";
+            const presencialText = calcTrainingPresencial.checked ? "Sim (R$ 350)" : "Não";
             
             const message = `Olá! Quero formalizar a proposta do Sistema de Pesquisas.
 Simulação:
-- Hospedagem: ${hostingText}
-- Suporte Mensal: ${supportText}
-- Treinamento: ${trainingText}
+- Desenvolvimento: R$ 4.250 (50% sinal / 50% entrega)
+- Servidor VPS: ${vpsText}
+- Suporte & Vídeos: Incluso
+- Treinamento Online: ${onlineText}
+- Treinamento Presencial: ${presencialText}
 Total Previsto: ${totalDisplay.textContent}
 
 Vamos agendar os próximos passos?`;
