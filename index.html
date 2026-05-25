@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - Sistema de Pesquisas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+
+    <div class="container animate-fade-in">
+        <!-- Header -->
+        <header>
+            <div class="logo">TERCEIRO SETOR TECH</div>
+            <div class="controls">
+                <button class="btn btn-ghost" id="theme-toggle" title="Tema" aria-label="Tema">
+                    <svg id="theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                    </svg>
+                </button>
+                <button class="btn btn-ghost" onclick="window.print()" title="Imprimir" aria-label="Imprimir">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                        <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+                    </svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Document Hero -->
+        <div class="doc-hero">
+            <span class="badge">Proposta Comercial</span>
+            <h1>Sistema de Pesquisas de Satisfação</h1>
+            <p class="lead">Solução simplificada de gestão e coleta de dados de impacto social.</p>
+            
+            <div class="meta-grid">
+                <div class="meta-item">
+                    <span class="meta-label">Documento</span>
+                    <span class="meta-val">Proposta Técnica</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Versão</span>
+                    <span class="meta-val">1.0</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Data</span>
+                    <span class="meta-val">Maio de 2025</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-label">Validade</span>
+                    <span class="meta-val">30 dias</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1. Módulos do Sistema -->
+        <section id="escopo">
+            <h2><span>01.</span> Módulos do Sistema</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">#</th>
+                            <th style="width: 25%">Módulo</th>
+                            <th>Funcionalidades Principais</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td style="font-weight: 600;">Gestão de Projetos</td>
+                            <td>Cadastro centralizado de projetos, termos de fomento e programas vinculados.</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td style="font-weight: 600;">Gestão de Lideranças</td>
+                            <td>Controle de líderes comunitários, canais de contato e vinculação flexível.</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td style="font-weight: 600;">Criação de Pesquisas</td>
+                            <td>Construtor de formulários (Múltipla Escolha, Escala, Texto e NPS) por público-alvo.</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td style="font-weight: 600;">Distribuição Inteligente</td>
+                            <td>Disparo ágil de links codificados via WhatsApp Web e gerador automático de QR Code.</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td style="font-weight: 600;">Coleta Leve</td>
+                            <td>Interface pública ultra responsiva otimizada para conexões móveis fracas.</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td style="font-weight: 600;">Dashboard & Docs</td>
+                            <td>Métricas gerais em tempo real (NPS, adesão) com exportações diretas para PDF e Excel.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- 2. Fluxo de Operações -->
+        <section id="operacoes">
+            <h2><span>02.</span> Fluxo e Rastreabilidade</h2>
+            <p>O sistema segue uma ordem que preserva o contexto, sem exigir login dos respondentes comunitários:</p>
+            
+            <div class="step-list">
+                <div class="step-item">
+                    <span class="step-num">1</span>
+                    <div class="step-content">
+                        <h4>Projeto Cadastrado</h4>
+                        <p>Estabelece a unidade de fomento e agrupa todas as métricas.</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">2</span>
+                    <div class="step-content">
+                        <h4>Líder Associado & Link Único</h4>
+                        <p>O sistema associa líderes a pesquisas e gera links parametrizados (Projeto + Líder + Público).</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <span class="step-num">3</span>
+                    <div class="step-content">
+                        <h4>WhatsApp e QR Code</h4>
+                        <p>Mensagem gerada e disparada via wa.me para replicação rápida em canais comunitários.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Stack de Tecnologia -->
+        <section id="tecnologias">
+            <h2><span>03.</span> Stack de Tecnologia</h2>
+            <div class="tech-pills">
+                <span class="tech-badge">React (Frontend)</span>
+                <span class="tech-badge">Node.js (Backend)</span>
+                <span class="tech-badge">NestJS (Framework)</span>
+                <span class="tech-badge">PostgreSQL (Banco)</span>
+                <span class="tech-badge">Puppeteer (Relatórios PDF)</span>
+                <span class="tech-badge">ExcelJS (Exportação)</span>
+            </div>
+        </section>
+
+        <!-- 4. Etapas de Desenvolvimento -->
+        <section id="cronograma">
+            <h2><span>04.</span> Etapas de Desenvolvimento</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Etapa</th>
+                            <th>Escopo Técnico Principal</th>
+                            <th style="width: 15%">Prazo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="font-weight: 600;">1. Planejamento</td>
+                            <td>Alinhamento operacional, especificação de banco e protótipos de interface.</td>
+                            <td>2 semanas</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">2. Estrutura Base</td>
+                            <td>Banco, segurança e autenticação, cadastros centrais de projetos e líderes.</td>
+                            <td>3 semanas</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">3. Motor & Formulários</td>
+                            <td>Construtor dinâmico de blocos de perguntas e interface pública de coleta.</td>
+                            <td>4 semanas</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">4. Disparos</td>
+                            <td>Mecanismo de link parametrizado, QR Code dinâmico e canal WhatsApp.</td>
+                            <td>2 semanas</td>
+                        </tr>
+                        <tr id="row-dashboards" class="glitch-row">
+                            <td style="font-weight: 600;">5. Dashboards</td>
+                            <td>Estatísticas, painel gráfico, exportações nativas de dados estruturados.</td>
+                            <td>3 semanas</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">6. QA & Ajustes</td>
+                            <td>Testes cruzados com dispositivos móveis reais e correção de falhas.</td>
+                            <td>2 semanas</td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">7. Deploy & Docs</td>
+                            <td>Implantação cloud, documentação simples e entrega do código de controle.</td>
+                            <td>1 semana</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-muted" style="font-size: 0.8rem; text-align: right; margin-top: 0.5rem;">Prazo acumulado estimado: <strong>17 semanas</strong> (~4 meses).</p>
+        </section>
+
+        <!-- 5. Simulador de Orçamento -->
+        <section id="investimento">
+            <h2><span>05.</span> Simulador de Orçamento</h2>
+            
+            <div class="calc-box">
+                <div class="calc-inputs">
+                    <div class="calc-title">Configurar Contratação</div>
+                    
+                    <label class="calc-option">
+                        <input type="checkbox" id="calc-base" checked disabled>
+                        <span>Desenvolvimento Base (Etapas 1-7)<br><span class="text-muted" style="font-size: 0.7rem;">Módulos 1 a 6 descritos no escopo básico</span></span>
+                    </label>
+                    
+                    <label class="calc-option">
+                        <input type="checkbox" id="calc-hosting" checked>
+                        <span>Servidor Cloud & SSL Anual<br><span class="text-muted" style="font-size: 0.7rem;">Hospedagem segura com backup diário</span></span>
+                    </label>
+
+                    <label class="calc-option">
+                        <input type="checkbox" id="calc-support">
+                        <span>Suporte & Manutenção Mensal<br><span class="text-muted" style="font-size: 0.7rem;">Atendimento dedicado para dúvidas e bugs</span></span>
+                    </label>
+
+                    <label class="calc-option">
+                        <input type="checkbox" id="calc-training">
+                        <span>Treinamento de Equipe + Guias<br><span class="text-muted" style="font-size: 0.7rem;">Workshop prático e manuais operacionais</span></span>
+                    </label>
+                    
+                    <select class="calc-select" id="calc-months">
+                        <option value="6">Manutenção - Contrato de 6 meses</option>
+                        <option value="12" selected>Manutenção - Contrato de 12 meses (Recomendado)</option>
+                        <option value="24">Manutenção - Contrato de 24 meses (15% desc)</option>
+                    </select>
+                </div>
+
+                <div class="calc-result">
+                    <div>
+                        <span class="badge" style="background-color: var(--muted); border-color: var(--border);">Simulação</span>
+                        <div class="price-display">
+                            <span class="price-label">Total Estimado</span>
+                            <div class="price-num" id="total-display">R$ 52.400</div>
+                        </div>
+                        
+                        <div class="calc-rows">
+                            <div class="calc-row">
+                                <span>Desenvolvimento:</span>
+                                <span id="detail-base">R$ 50.000</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>Servidor (Anual):</span>
+                                <span id="detail-hosting">R$ 2.400</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>Suporte:</span>
+                                <span id="detail-support">Não Incluso</span>
+                            </div>
+                            <div class="calc-row">
+                                <span>Treinamento:</span>
+                                <span id="detail-training">Não Incluso</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <button class="btn btn-primary" style="width: 100%; margin-bottom: 0.5rem;" id="submit-proposal-btn">Solicitar Proposta Formal</button>
+                        <div class="calc-footer">
+                            * Valores meramente estimativos. Proposta oficial jurídica pós alinhamento.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Condições Gerais -->
+        <section id="condicoes">
+            <h2><span>06.</span> Condições Gerais</h2>
+            <div class="cond-list">
+                <div class="cond-item">
+                    <h4>Validade Comercial</h4>
+                    <p>Validade desta proposta por até 30 dias após emissão (Maio de 2025).</p>
+                </div>
+                <div class="cond-item">
+                    <h4>Garantia Total</h4>
+                    <p>Atendimento de garantia por 90 dias após deploy para ajustes operacionais e bugs.</p>
+                </div>
+                <div class="cond-item">
+                    <h4>Transferência de Código</h4>
+                    <p>Cessão integral de código fonte e credenciais de deploy na homologação.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <h3>Iniciar Projeto</h3>
+            <p>Clique abaixo para oficializar a contratação ou tirar dúvidas.</p>
+            <div class="footer-actions">
+                <button class="btn btn-primary" id="footer-accept-btn">Aprovar Proposta</button>
+                <button class="btn btn-outline" onclick="window.print()">Salvar PDF</button>
+            </div>
+            <div class="credits">
+                // 2025 Terceiro Setor Tech.
+            </div>
+        </footer>
+    </div>
+
+    <!-- Mobile Floating Dock -->
+    <div class="mobile-dock" id="mobile-dock">
+        <a href="#escopo" class="dock-btn" title="Módulos">Mód</a>
+        <a href="#operacoes" class="dock-btn" title="Fluxos">Fluxo</a>
+        <a href="#tecnologias" class="dock-btn" title="Tecnologia">Tech</a>
+        <a href="#cronograma" class="dock-btn" title="Etapas">Etapas</a>
+        <a href="#investimento" class="dock-btn" title="Simulador">Orçam</a>
+        <a href="#condicoes" class="dock-btn" title="Garantias">Garant</a>
+    </div>
+
+    <!-- High-Impact Dashboard Modal (Completely Not Shadcn) -->
+    <div class="dash-modal" id="dash-modal">
+        <div class="dash-window">
+            <div class="dash-header-neon">
+                <div class="dash-title-neon">
+                    <span class="blink-dot"></span>
+                    Central de Impacto Comunitário — Tempo Real
+                </div>
+                <button class="dash-close-btn" id="dash-close-btn">FECHAR ×</button>
+            </div>
+            <div class="dash-body-neon">
+                <!-- Glowing Quick Metrics -->
+                <div class="dash-grid-neon">
+                    <div class="dash-card-neon">
+                        <div class="dash-card-label">Respostas Coletadas</div>
+                        <div class="dash-card-val neon-cyan">8.492</div>
+                        <div class="dash-card-indicator green">▲ +42.8% este mês</div>
+                    </div>
+                    <div class="dash-card-neon pink">
+                        <div class="dash-card-label">Satisfação / NPS</div>
+                        <div class="dash-card-val neon-pink">94.8%</div>
+                        <div class="dash-card-indicator green">▲ Excelente</div>
+                    </div>
+                    <div class="dash-card-neon purple">
+                        <div class="dash-card-label">Lideranças Ativas</div>
+                        <div class="dash-card-val neon-purple">88</div>
+                        <div class="dash-card-indicator green">▲ 100% integradas</div>
+                    </div>
+                </div>
+
+                <!-- High-Impact Colorful SVG Neon Chart -->
+                <div class="dash-chart-neon">
+                    <div class="chart-header-neon">
+                        <span>Fluxo de Coleta Comunitário (Histórico Mensal)</span>
+                        <span style="color: #ff007f;">Visualização Holográfica</span>
+                    </div>
+                    <div class="chart-container-svg">
+                        <svg class="chart-svg" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="chart-neon-grad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="rgba(0, 240, 255, 0.4)" />
+                                    <stop offset="100%" stop-color="rgba(0, 240, 255, 0.0)" />
+                                </linearGradient>
+                                <linearGradient id="chart-pink-grad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="rgba(255, 0, 127, 0.4)" />
+                                    <stop offset="100%" stop-color="rgba(255, 0, 127, 0.0)" />
+                                </linearGradient>
+                            </defs>
+                            
+                            <!-- Grid lines -->
+                            <line x1="0" y1="30" x2="800" y2="30" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                            <line x1="0" y1="80" x2="800" y2="80" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                            <line x1="0" y1="130" x2="800" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
+                            
+                            <!-- Area fill underneath the curve -->
+                            <path d="M0 180 Q100 130 200 100 T400 60 T600 40 T800 20 L800 180 Z" fill="url(#chart-neon-grad)" />
+                            <path d="M0 180 Q100 150 200 120 T400 90 T600 70 T800 50 L800 180 Z" fill="url(#chart-pink-grad)" />
+                            
+                            <!-- Neon Stroke lines -->
+                            <path class="svg-path-neon svg-glow" d="M0 180 Q100 130 200 100 T400 60 T600 40 T800 20" fill="none" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" />
+                            <path class="svg-path-neon svg-glow-pink" d="M0 180 Q100 150 200 120 T400 90 T600 70 T800 50" fill="none" stroke="#ff007f" stroke-width="3" stroke-linecap="round" />
+                            
+                            <!-- Chart points -->
+                            <circle cx="200" cy="100" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
+                            <circle cx="400" cy="60" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
+                            <circle cx="600" cy="40" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
+                            <circle cx="800" cy="20" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
+                            
+                            <circle cx="200" cy="120" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
+                            <circle cx="400" cy="90" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
+                            <circle cx="600" cy="70" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
+                            <circle cx="800" cy="50" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div style="display:flex; justify-content: space-between; font-size: 0.7rem; color: #8a8a9d; font-family: monospace;">
+                        <span>Jan 2025</span>
+                        <span>Fev 2025</span>
+                        <span>Mar 2025</span>
+                        <span>Abr 2025</span>
+                        <span>Mai 2025</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Logic -->
+    <script>
+        // Dark/Light Theme Selector
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark');
+            const isDark = body.classList.contains('dark');
+            
+            if (isDark) {
+                themeIcon.innerHTML = `
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                `;
+            } else {
+                themeIcon.innerHTML = `
+                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                `;
+            }
+        });
+
+        // Interactive Price Simulator Logic
+        const calcHosting = document.getElementById('calc-hosting');
+        const calcSupport = document.getElementById('calc-support');
+        const calcTraining = document.getElementById('calc-training');
+        const calcMonths = document.getElementById('calc-months');
+
+        const totalDisplay = document.getElementById('total-display');
+        const detailHosting = document.getElementById('detail-hosting');
+        const detailSupport = document.getElementById('detail-support');
+        const detailTraining = document.getElementById('detail-training');
+
+        function formatBRL(value) {
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL', maximumFractionDigits: 0 }).format(value);
+        }
+
+        function calculate() {
+            const base = 50000;
+            let hosting = 0;
+            let support = 0;
+            let training = 0;
+
+            if (calcHosting.checked) {
+                hosting = 2400;
+                detailHosting.textContent = formatBRL(hosting);
+            } else {
+                detailHosting.textContent = "Não Incluso";
+            }
+
+            if (calcSupport.checked) {
+                const months = parseInt(calcMonths.value);
+                let rate = 1800;
+                if (months === 24) rate = 1800 * 0.85; // 15% discount
+                
+                support = rate * months;
+                detailSupport.textContent = `${formatBRL(support)} (${months}m)`;
+            } else {
+                detailSupport.textContent = "Não Incluso";
+            }
+
+            if (calcTraining.checked) {
+                training = 2000;
+                detailTraining.textContent = formatBRL(training);
+            } else {
+                detailTraining.textContent = "Não Incluso";
+            }
+
+            const total = base + hosting + support + training;
+            totalDisplay.textContent = formatBRL(total);
+        }
+
+        calcHosting.addEventListener('change', calculate);
+        calcSupport.addEventListener('change', calculate);
+        calcTraining.addEventListener('change', calculate);
+        calcMonths.addEventListener('change', calculate);
+
+        // Actions
+        const submitBtn = document.getElementById('submit-proposal-btn');
+        const acceptBtn = document.getElementById('footer-accept-btn');
+
+        function sendWhatsapp() {
+            const supportText = calcSupport.checked ? `Sim (${calcMonths.value} meses)` : "Não";
+            const hostingText = calcHosting.checked ? "Sim" : "Não";
+            const trainingText = calcTraining.checked ? "Sim" : "Não";
+            
+            const message = `Olá! Quero formalizar a proposta do Sistema de Pesquisas.
+Simulação:
+- Hospedagem: ${hostingText}
+- Suporte Mensal: ${supportText}
+- Treinamento: ${trainingText}
+Total Previsto: ${totalDisplay.textContent}
+
+Vamos agendar os próximos passos?`;
+
+            window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`, '_blank');
+        }
+
+        submitBtn.addEventListener('click', sendWhatsapp);
+        acceptBtn.addEventListener('click', sendWhatsapp);
+
+        // Scroll detection & High-Impact Dashboard Modal
+        const rowDashboards = document.getElementById('row-dashboards');
+        const dashModal = document.getElementById('dash-modal');
+        const dashCloseBtn = document.getElementById('dash-close-btn');
+        let hasTriggered = false;
+
+        function openModal() {
+            dashModal.classList.add('active');
+            
+            // Re-trigger the chart SVG drawing animation
+            const chartPaths = document.querySelectorAll('.svg-path-neon');
+            chartPaths.forEach(path => {
+                path.style.animation = 'none';
+                path.offsetHeight; // trigger reflow
+                path.style.animation = 'drawChart 2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
+            });
+        }
+
+        function closeModal() {
+            dashModal.classList.remove('active');
+        }
+
+        // Close on escape
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Close on background click
+        dashModal.addEventListener('click', (e) => {
+            if (e.target === dashModal) closeModal();
+        });
+
+        dashCloseBtn.addEventListener('click', closeModal);
+
+        // Add click listener so user can open/re-open anytime
+        rowDashboards.addEventListener('click', () => {
+            rowDashboards.classList.add('flash');
+            setTimeout(() => {
+                rowDashboards.classList.remove('flash');
+                openModal();
+            }, 300);
+        });
+
+        // Setup scroll detector
+        if ('IntersectionObserver' in window && rowDashboards) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !hasTriggered) {
+                        hasTriggered = true;
+                        
+                        // Unexpected glitch effect
+                        rowDashboards.classList.add('flash');
+                        
+                        setTimeout(() => {
+                            rowDashboards.classList.remove('flash');
+                            openModal();
+                        }, 1200); // trigger modal after neon glitch flash ends
+                        
+                        observer.unobserve(rowDashboards);
+                    }
+                });
+            }, {
+                threshold: 0.8, // trigger when 80% visible
+                rootMargin: '0px 0px -50px 0px' // slightly higher up
+            });
+
+            observer.observe(rowDashboards);
+        }
+
+        // Mobile Dock Scrollspy Highlight
+        const sections = document.querySelectorAll('section');
+        const dockBtns = document.querySelectorAll('.mobile-dock .dock-btn');
+
+        if ('IntersectionObserver' in window) {
+            const spyObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const activeId = entry.target.getAttribute('id');
+                        dockBtns.forEach(btn => {
+                            btn.classList.remove('active');
+                            if (btn.getAttribute('href') === `#${activeId}`) {
+                                btn.classList.add('active');
+                            }
+                        });
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '-20% 0px -60% 0px' // spy in the upper middle of the screen
+            });
+
+            sections.forEach(sec => spyObserver.observe(sec));
+        }
+    </script>
+</body>
+</html>
