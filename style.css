@@ -621,7 +621,7 @@ footer p {
     }
 
     .mobile-dock.aggressive-shadow {
-        box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.35), 0 -4px 12px rgba(0, 0, 0, 0.2) !important;
+        box-shadow: 0 -25px 50px rgba(0, 0, 0, 0.5), 0 -8px 20px rgba(0, 0, 0, 0.3) !important;
     }
 
     .dock-btn {
