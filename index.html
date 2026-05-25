@@ -316,7 +316,7 @@
     </div>
 
     <!-- Mobile Floating Dock -->
-    <div class="mobile-dock" id="mobile-dock">
+    <div class="mobile-dock aggressive-shadow" id="mobile-dock">
         <a href="#escopo" class="dock-btn" title="Módulos">Mód</a>
         <a href="#operacoes" class="dock-btn" title="Fluxos">Fluxo</a>
         <a href="#tecnologias" class="dock-btn" title="Tecnologia">Tech</a>
@@ -406,9 +406,26 @@ Vamos agendar os próximos passos?`;
 
 
 
-        // Mobile Dock Scrollspy Highlight
+        // Mobile Dock Scrollspy Highlight & Aggressive Shadow Removal
         const sections = document.querySelectorAll('section');
         const dockBtns = document.querySelectorAll('.mobile-dock .dock-btn');
+        const mobileDock = document.getElementById('mobile-dock');
+
+        function removeAggressiveShadow() {
+            if (mobileDock) {
+                mobileDock.classList.remove('aggressive-shadow');
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 15) {
+                removeAggressiveShadow();
+            }
+        });
+
+        dockBtns.forEach(btn => {
+            btn.addEventListener('click', removeAggressiveShadow);
+        });
 
         if ('IntersectionObserver' in window) {
             const spyObserver = new IntersectionObserver((entries) => {

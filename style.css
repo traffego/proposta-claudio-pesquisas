@@ -612,17 +612,16 @@ footer p {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         gap: 0;
-        background: rgba(9, 9, 11, 0.95);
+        background: #ffffff !important;
         backdrop-filter: blur(16px);
-        border-top: 1px solid var(--border);
+        border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
         padding: 0;
-        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.06) !important;
     }
-    
-    body.light-theme .mobile-dock, 
-    body:not(.dark) .mobile-dock {
-        background: rgba(255, 255, 255, 0.95);
-        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.08);
+
+    .mobile-dock.aggressive-shadow {
+        box-shadow: 0 -15px 40px rgba(0, 0, 0, 0.35), 0 -4px 12px rgba(0, 0, 0, 0.2) !important;
     }
 
     .dock-btn {
@@ -633,7 +632,7 @@ footer p {
         border-radius: 0;
         border: none;
         background: transparent;
-        color: var(--muted-foreground);
+        color: #71717a !important;
         cursor: pointer;
         transition: var(--transition);
         text-decoration: none;
@@ -649,8 +648,8 @@ footer p {
 
     .dock-btn:hover, .dock-btn.active {
         background: transparent;
-        color: var(--foreground);
-        border-bottom-color: var(--foreground);
+        color: #09090b !important;
+        border-bottom-color: #09090b !important;
         text-decoration: none;
     }
 }
