@@ -461,7 +461,6 @@ tr:last-child td {
 
 .calc-option input[type="checkbox"]:checked::after {
     content: '';
-    position: absolute;
     width: 0.25rem;
     height: 0.5rem;
     border: solid var(--primary-foreground);
@@ -668,7 +667,8 @@ footer p {
         border-radius: 0;
         border: none;
         background: transparent;
-        color: #71717a !important;
+        color: #09090b !important;
+        opacity: 0.6;
         cursor: pointer;
         transition: var(--transition);
         text-decoration: none;
@@ -685,6 +685,7 @@ footer p {
     .dock-btn:hover, .dock-btn.active {
         background: transparent;
         color: #09090b !important;
+        opacity: 1;
         border-bottom-color: #09090b !important;
         text-decoration: none;
     }

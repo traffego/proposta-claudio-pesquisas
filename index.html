@@ -33,7 +33,7 @@
         <!-- Document Hero -->
         <div class="doc-hero">
             <span class="badge">Proposta Comercial</span>
-            <h1>Sistema de Pesquisas de Satisfação</h1>
+            <h1>Sistema de Gestão de Pesquisas</h1>
             <p class="lead">Solução simplificada de gestão e coleta de dados de impacto social.</p>
             
             <div class="meta-grid">
@@ -273,7 +273,7 @@
                     </div>
                     
                     <div>
-                        <button class="btn btn-primary" style="width: 100%; margin-bottom: 0.5rem;" id="submit-proposal-btn">Solicitar Proposta Formal</button>
+                        <button class="btn btn-primary" style="width: 100%; margin-bottom: 0.5rem;" id="submit-proposal-btn">APROVAR PROPOSTA</button>
                         <div class="calc-footer">
                             * VPS de livre contratação. Treinamento presencial acresce taxas de deslocamento.
                         </div>
@@ -306,7 +306,7 @@
             <h3>Iniciar Projeto</h3>
             <p>Clique abaixo para oficializar a contratação ou tirar dúvidas.</p>
             <div class="footer-actions">
-                <button class="btn btn-primary" id="footer-accept-btn">Aprovar Proposta</button>
+                <button class="btn btn-primary" id="footer-accept-btn">APROVAR PROPOSTA</button>
                 <button class="btn btn-outline" onclick="window.print()">Salvar PDF</button>
             </div>
             <div class="credits">
@@ -383,22 +383,8 @@
         const acceptBtn = document.getElementById('footer-accept-btn');
 
         function sendWhatsapp() {
-            const vpsText = calcVps.checked ? "Sim (R$ 150/mês)" : "Não";
-            const onlineText = calcTrainingOnline.checked ? "Sim (R$ 150)" : "Não";
-            const presencialText = calcTrainingPresencial.checked ? "Sim (R$ 350)" : "Não";
-            
-            const message = `Olá! Quero formalizar a proposta do Sistema de Pesquisas.
-Simulação:
-- Desenvolvimento: R$ 4.250 (50% sinal / 50% entrega)
-- Servidor VPS: ${vpsText}
-- Suporte & Vídeos: Incluso
-- Treinamento Online: ${onlineText}
-- Treinamento Presencial: ${presencialText}
-Total Previsto: ${totalDisplay.textContent}
-
-Vamos agendar os próximos passos?`;
-
-            window.open(`https://wa.me/5511999999999?text=${encodeURIComponent(message)}`, '_blank');
+            const message = `Olá, Jônathas. Nós aprovamos a proposta do Sistema de Gestão de Pesquisas. Quais são os próximos passos?`;
+            window.open(`https://wa.me/552182188560?text=${encodeURIComponent(message)}`, '_blank');
         }
 
         submitBtn.addEventListener('click', sendWhatsapp);
