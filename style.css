@@ -64,14 +64,19 @@ body {
 }
 
 /* Header & Controls */
+.top-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -1rem;
+    padding-top: 1rem;
+}
+
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border);
     padding: 1.25rem 0;
     margin-bottom: 2rem;
-    gap: 1rem;
 }
 
 .profile-header {
@@ -569,7 +574,7 @@ footer p {
         background-color: white !important;
         color: black !important;
     }
-    header, .controls, .btn, .calc-select, .calc-footer, footer {
+    header, .controls, .btn, .calc-select, .calc-footer, footer, .top-actions {
         display: none !important;
     }
     .container {
