@@ -11,14 +11,7 @@
     <div class="container animate-fade-in">
         <!-- Header -->
         <header>
-            <div class="logo">TERCEIRO SETOR TECH</div>
             <div class="controls">
-                <button class="btn btn-ghost" id="theme-toggle" title="Tema" aria-label="Tema">
-                    <svg id="theme-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-                    </svg>
-                </button>
                 <button class="btn btn-ghost" onclick="window.print()" title="Imprimir" aria-label="Imprimir">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
@@ -178,7 +171,7 @@
                             <td>Mecanismo de link parametrizado, QR Code dinâmico e canal WhatsApp.</td>
                             <td>2 semanas</td>
                         </tr>
-                        <tr id="row-dashboards" class="glitch-row">
+                        <tr>
                             <td style="font-weight: 600;">5. Dashboards</td>
                             <td>Estatísticas, painel gráfico, exportações nativas de dados estruturados.</td>
                             <td>3 semanas</td>
@@ -315,114 +308,8 @@
         <a href="#condicoes" class="dock-btn" title="Garantias">Garant</a>
     </div>
 
-    <!-- High-Impact Dashboard Modal (Completely Not Shadcn) -->
-    <div class="dash-modal" id="dash-modal">
-        <div class="dash-window">
-            <div class="dash-header-neon">
-                <div class="dash-title-neon">
-                    <span class="blink-dot"></span>
-                    Central de Impacto Comunitário — Tempo Real
-                </div>
-                <button class="dash-close-btn" id="dash-close-btn">FECHAR ×</button>
-            </div>
-            <div class="dash-body-neon">
-                <!-- Glowing Quick Metrics -->
-                <div class="dash-grid-neon">
-                    <div class="dash-card-neon">
-                        <div class="dash-card-label">Respostas Coletadas</div>
-                        <div class="dash-card-val neon-cyan">8.492</div>
-                        <div class="dash-card-indicator green">▲ +42.8% este mês</div>
-                    </div>
-                    <div class="dash-card-neon pink">
-                        <div class="dash-card-label">Satisfação / NPS</div>
-                        <div class="dash-card-val neon-pink">94.8%</div>
-                        <div class="dash-card-indicator green">▲ Excelente</div>
-                    </div>
-                    <div class="dash-card-neon purple">
-                        <div class="dash-card-label">Lideranças Ativas</div>
-                        <div class="dash-card-val neon-purple">88</div>
-                        <div class="dash-card-indicator green">▲ 100% integradas</div>
-                    </div>
-                </div>
-
-                <!-- High-Impact Colorful SVG Neon Chart -->
-                <div class="dash-chart-neon">
-                    <div class="chart-header-neon">
-                        <span>Fluxo de Coleta Comunitário (Histórico Mensal)</span>
-                        <span style="color: #ff007f;">Visualização Holográfica</span>
-                    </div>
-                    <div class="chart-container-svg">
-                        <svg class="chart-svg" viewBox="0 0 800 180" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="chart-neon-grad" x1="0" y1="0" x2="0" y2="1">
-                                    <stop offset="0%" stop-color="rgba(0, 240, 255, 0.4)" />
-                                    <stop offset="100%" stop-color="rgba(0, 240, 255, 0.0)" />
-                                </linearGradient>
-                                <linearGradient id="chart-pink-grad" x1="0" y1="0" x2="0" y2="1">
-                                    <stop offset="0%" stop-color="rgba(255, 0, 127, 0.4)" />
-                                    <stop offset="100%" stop-color="rgba(255, 0, 127, 0.0)" />
-                                </linearGradient>
-                            </defs>
-                            
-                            <!-- Grid lines -->
-                            <line x1="0" y1="30" x2="800" y2="30" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-                            <line x1="0" y1="80" x2="800" y2="80" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-                            <line x1="0" y1="130" x2="800" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1" />
-                            
-                            <!-- Area fill underneath the curve -->
-                            <path d="M0 180 Q100 130 200 100 T400 60 T600 40 T800 20 L800 180 Z" fill="url(#chart-neon-grad)" />
-                            <path d="M0 180 Q100 150 200 120 T400 90 T600 70 T800 50 L800 180 Z" fill="url(#chart-pink-grad)" />
-                            
-                            <!-- Neon Stroke lines -->
-                            <path class="svg-path-neon svg-glow" d="M0 180 Q100 130 200 100 T400 60 T600 40 T800 20" fill="none" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" />
-                            <path class="svg-path-neon svg-glow-pink" d="M0 180 Q100 150 200 120 T400 90 T600 70 T800 50" fill="none" stroke="#ff007f" stroke-width="3" stroke-linecap="round" />
-                            
-                            <!-- Chart points -->
-                            <circle cx="200" cy="100" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
-                            <circle cx="400" cy="60" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
-                            <circle cx="600" cy="40" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
-                            <circle cx="800" cy="20" r="5" fill="#00f0ff" stroke="#fff" stroke-width="2" />
-                            
-                            <circle cx="200" cy="120" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
-                            <circle cx="400" cy="90" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
-                            <circle cx="600" cy="70" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
-                            <circle cx="800" cy="50" r="5" fill="#ff007f" stroke="#fff" stroke-width="2" />
-                        </svg>
-                    </div>
-                    <div style="display:flex; justify-content: space-between; font-size: 0.7rem; color: #8a8a9d; font-family: monospace;">
-                        <span>Jan 2025</span>
-                        <span>Fev 2025</span>
-                        <span>Mar 2025</span>
-                        <span>Abr 2025</span>
-                        <span>Mai 2025</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- JS Logic -->
     <script>
-        // Dark/Light Theme Selector
-        const themeToggleBtn = document.getElementById('theme-toggle');
-        const themeIcon = document.getElementById('theme-icon');
-        const body = document.body;
-
-        themeToggleBtn.addEventListener('click', () => {
-            body.classList.toggle('dark');
-            const isDark = body.classList.contains('dark');
-            
-            if (isDark) {
-                themeIcon.innerHTML = `
-                    <circle cx="12" cy="12" r="4"></circle>
-                    <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
-                `;
-            } else {
-                themeIcon.innerHTML = `
-                    <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-                `;
-            }
-        });
 
         // Interactive Price Simulator Logic
         const calcHosting = document.getElementById('calc-hosting');
@@ -503,74 +390,7 @@ Vamos agendar os próximos passos?`;
         submitBtn.addEventListener('click', sendWhatsapp);
         acceptBtn.addEventListener('click', sendWhatsapp);
 
-        // Scroll detection & High-Impact Dashboard Modal
-        const rowDashboards = document.getElementById('row-dashboards');
-        const dashModal = document.getElementById('dash-modal');
-        const dashCloseBtn = document.getElementById('dash-close-btn');
-        let hasTriggered = false;
 
-        function openModal() {
-            dashModal.classList.add('active');
-            
-            // Re-trigger the chart SVG drawing animation
-            const chartPaths = document.querySelectorAll('.svg-path-neon');
-            chartPaths.forEach(path => {
-                path.style.animation = 'none';
-                path.offsetHeight; // trigger reflow
-                path.style.animation = 'drawChart 2s cubic-bezier(0.16, 1, 0.3, 1) forwards';
-            });
-        }
-
-        function closeModal() {
-            dashModal.classList.remove('active');
-        }
-
-        // Close on escape
-        window.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeModal();
-        });
-
-        // Close on background click
-        dashModal.addEventListener('click', (e) => {
-            if (e.target === dashModal) closeModal();
-        });
-
-        dashCloseBtn.addEventListener('click', closeModal);
-
-        // Add click listener so user can open/re-open anytime
-        rowDashboards.addEventListener('click', () => {
-            rowDashboards.classList.add('flash');
-            setTimeout(() => {
-                rowDashboards.classList.remove('flash');
-                openModal();
-            }, 300);
-        });
-
-        // Setup scroll detector
-        if ('IntersectionObserver' in window && rowDashboards) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting && !hasTriggered) {
-                        hasTriggered = true;
-                        
-                        // Unexpected glitch effect
-                        rowDashboards.classList.add('flash');
-                        
-                        setTimeout(() => {
-                            rowDashboards.classList.remove('flash');
-                            openModal();
-                        }, 1200); // trigger modal after neon glitch flash ends
-                        
-                        observer.unobserve(rowDashboards);
-                    }
-                });
-            }, {
-                threshold: 0.8, // trigger when 80% visible
-                rootMargin: '0px 0px -50px 0px' // slightly higher up
-            });
-
-            observer.observe(rowDashboards);
-        }
 
         // Mobile Dock Scrollspy Highlight
         const sections = document.querySelectorAll('section');
