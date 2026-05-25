@@ -66,17 +66,62 @@ body {
 /* Header & Controls */
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border);
-    padding: 1rem 0;
+    padding: 1.25rem 0;
     margin-bottom: 2rem;
+    gap: 1rem;
 }
 
-.logo {
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    background-color: var(--muted);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.profile-name {
     font-weight: 600;
     font-size: 0.95rem;
-    letter-spacing: -0.01em;
+    color: var(--foreground);
+    line-height: 1.2;
+}
+
+.profile-specialties {
+    font-size: 0.725rem;
+    color: var(--muted-foreground);
+    line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .profile-header {
+        align-items: flex-start;
+    }
+    
+    .controls {
+        align-self: flex-end;
+    }
 }
 
 .controls {
